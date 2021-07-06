@@ -1,0 +1,19 @@
+header {
+  position: absolute;
+  z-index: 1;
+  top: 1%;
+  right: 9%;
+  ul {
+    display: flex;
+    font-size: 18px;
+    cursor: pointer;
+    li {
+      &:first-of-type {
+        margin-right: 30px;
+      }
+      a:hover {
+        color: #ffb100;
+      }
+    }
+  }
+}

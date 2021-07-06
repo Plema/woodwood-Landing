@@ -1,0 +1,111 @@
+.wrapper {
+  position: relative;
+}
+.banner {
+  .background {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../img/baner-bg.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+  }
+  .container {
+    padding: 190px 0 222px;
+  }
+  h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 75px;
+    margin-bottom: 102px;
+  }
+  p:first-of-type {
+    font-weight: 600;
+    font-size: 46px;
+    margin-bottom: 25px;
+    span {
+      color: #ffb100;
+    }
+  }
+  p {
+    font-weight: 700;
+    font-size: 46px;
+    span {
+      color: #ffb100;
+    }
+  }
+  .stamm-brewing {
+    margin: 0 auto 50px;
+    max-width: 700px;
+  }
+  button {
+    min-width: 278px;
+    height: 56px;
+    background: rgba(196, 196, 196, 0.15);
+    border: 1px solid #ffffff;
+    margin-bottom: 139px;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:focus {
+      border: 1px solid #ffb100;
+      background: rgba(196, 196, 196, 0.22);
+    }
+  }
+  a {
+    font-size: 30px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    width: 58px;
+    height: 58px;
+    border: 1px solid;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      border: 1px solid #ffb100;
+      background: rgba(196, 196, 196, 0.22);
+    }
+    // i {
+    //   position: absolute;
+    //   bottom: -20%;
+    //   width: 100%;
+    //   height: 100%;
+    //   transition: all 0.3s ease-in-out;
+    //   &:hover {
+    //     color: #ffb100;
+    //   }
+    // }
+  }
+}
+.food-and-service {
+  .background {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../img/food-and-service-bg.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+  }
+}
+.menu-concept {
+  .background {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../img/menu-concept-bg.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+  }
+}
+.cooking-on-coals {
+  .background {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../img/cooking-on-coals-bg.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+  }
+}
+.we-bake-pizza {
+  .background {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../img/we-bake-pizza-bg.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+  }
+}

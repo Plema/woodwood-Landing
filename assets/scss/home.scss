@@ -1,7 +1,22 @@
 .wrapper {
   position: relative;
+  span {
+    color: #ffb100;
+  }
 }
+
 .banner {
+  .nav-bar {
+    position: absolute;
+    ul {
+      display: flex;
+      flex-direction: column;
+      a {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
   .background {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url(../img/baner-bg.png) no-repeat;
@@ -9,7 +24,13 @@
     background-size: cover;
   }
   .container {
-    padding: 190px 0 222px;
+    padding: 10% 0 0;
+    max-height: 100vh;
+  }
+  .banner-content {
+    position: absolute;
+    left: 15%;
+    height: 80%;
   }
   h1 {
     font-style: normal;
@@ -21,27 +42,22 @@
     font-weight: 600;
     font-size: 46px;
     margin-bottom: 25px;
-    span {
-      color: #ffb100;
-    }
   }
   p {
     font-weight: 700;
     font-size: 46px;
-    span {
-      color: #ffb100;
-    }
   }
   .stamm-brewing {
     margin: 0 auto 50px;
     max-width: 700px;
   }
   button {
+    position: relative;
     min-width: 278px;
     height: 56px;
     background: rgba(196, 196, 196, 0.15);
     border: 1px solid #ffffff;
-    margin-bottom: 139px;
+    margin-bottom: 16%;
     transition: all 0.3s ease-in-out;
     &:hover,
     &:focus {
@@ -52,7 +68,9 @@
   a {
     font-size: 30px;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
+    bottom: -340%;
+    left: 47.5%;
     display: flex;
     width: 58px;
     height: 58px;
@@ -84,28 +102,179 @@
     height: 100vh;
     background-size: cover;
   }
+  .container {
+    padding: 13% 0 0;
+  }
+  h2 {
+    position: relative;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 1.56;
+    text-transform: uppercase;
+  }
+  h2:last-of-type::after {
+    content: '';
+    position: absolute;
+    bottom: -60%;
+    right: 43%;
+    width: 169px;
+    height: 3px;
+    background: #fff;
+    transform: translate(0, -50%);
+  }
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 9% auto 0;
+    width: 146px;
+    height: 146px;
+    font-size: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    i {
+      position: absolute;
+      bottom: 20%;
+      color: #ffb100;
+    }
+  }
 }
 .menu-concept {
   .background {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(../img/menu-concept-bg.png) no-repeat;
+    background: url(../img/menu-concept-bg.png) no-repeat;
     height: 100vh;
     background-size: cover;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .content {
+    padding-top: 12%;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 46px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+  }
+  p {
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 90px;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 9% auto 0;
+        width: 146px;
+        height: 146px;
+        font-size: 72px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.55);
+        i {
+          position: absolute;
+          bottom: 22%;
+          color: #ffb100;
+        }
+      }
+      p {
+        margin-top: 15%;
+        font-weight: 500;
+        font-size: 22px;
+      }
+    }
+  }
+  li:first-of-type::after {
+    content: '----';
+    position: absolute;
+    top: 28%;
+    left: 36%;
+    font-size: 55px;
+    transform: translate(0, -50%);
+  }
+  li:last-of-type::before {
+    content: '----';
+    position: absolute;
+    top: 28%;
+    left: 57%;
+    font-size: 55px;
+    transform: translate(0, -50%);
+  }
+  li:not(:last-child) {
+    margin-right: 12%;
   }
 }
 .cooking-on-coals {
   .background {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(../img/cooking-on-coals-bg.png) no-repeat;
+    background: url(../img/cooking-on-coals-bg.png) no-repeat;
     height: 100vh;
     background-size: cover;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .content {
+    padding-top: 15%;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 46px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 38px;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
 }
 .we-bake-pizza {
   .background {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(../img/we-bake-pizza-bg.png) no-repeat;
+    background: url(../img/we-bake-pizza-bg.png) no-repeat;
     height: 100vh;
     background-size: cover;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .content {
+    padding-top: 15%;
+    width: 70%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 46px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    line-height: 1.55;
+    span {
+      text-decoration: underline;
+    }
+  }
+  p {
+    font-weight: bold;
+    font-size: 38px;
   }
 }

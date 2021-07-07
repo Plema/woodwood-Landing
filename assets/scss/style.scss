@@ -108,7 +108,7 @@ a {
   z-index: 4;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 60px;
   position: relative;
   text-align: center;
   @media (min-width: 768px) {
@@ -118,7 +118,6 @@ a {
   @media (min-width: 1024px) {
     width: 864px;
   }
-
   @media (min-width: 1280px) {
     width: 1080px;
   }
@@ -191,4 +190,60 @@ p {
   @media (min-width: 1280px) {
     padding: 29px 0;
   }
+}
+.fullscreen-bg {
+  overflow: hidden;
+  z-index: -100;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+@media (max-width: 767px) {
+  // .fullscreen-bg {
+  // }
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

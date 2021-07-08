@@ -1,25 +1,106 @@
 header {
   position: absolute;
   z-index: 5;
-  top: 1%;
+  top: 0.5%;
   right: 9%;
   ul {
     display: flex;
-    font-size: 18px;
+    font-size: 12px;
     cursor: pointer;
     li {
       position: relative;
       span {
-        font-size: 16px;
+        font-size: 12px;
         position: absolute;
         left: -18%;
-        // bottom: 1.5%;
       }
       &:first-of-type {
         margin-right: 30px;
       }
       a:hover {
         color: #ffb100;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    right: 5%;
+    ul {
+      font-size: 14px;
+      li {
+        span {
+          font-size: 14px;
+        }
+        &:first-of-type {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    right: 5%;
+    ul {
+      font-size: 16px;
+      li {
+        span {
+          font-size: 16px;
+        }
+        &:first-of-type {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+  }
+  @media (min-width: 1400px) {
+    right: 5%;
+    ul {
+      font-size: 18px;
+      li {
+        span {
+          font-size: 16px;
+        }
+        &:first-of-type {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1900px) {
+    top: 1%;
+    right: 7%;
+    ul {
+      display: flex;
+      font-size: 18px;
+      cursor: pointer;
+      li {
+        position: relative;
+        span {
+          font-size: 16px;
+          position: absolute;
+          left: -20%;
+          // bottom: 1.5%;
+        }
+        &:first-of-type {
+          margin-right: 30px;
+        }
+        a:hover {
+          color: #ffb100;
+        }
+      }
+    }
+  }
+  @media (min-width: 2500px) {
+    right: 7%;
+    ul {
+      font-size: 20px;
+      li {
+        span {
+          font-size: 18px;
+        }
+        &:first-of-type {
+          margin-right: 30px;
+        }
       }
     }
   }

@@ -24,16 +24,21 @@
     <!-- Основной контент -->
     <main class="wrapper">
       <section class="banner" id="banner">
+        <div class="nav-bar">
+          <ul>
+            <li class="text">
+              <p>Добро пожаловать</p>
+            </li>
+            <li>
+              <a href="#banner" class="active"></a>
+            </li>
+            <li><a href="#food-and-service"></a></li>
+            <li><a href="#menu-concept"></a></li>
+            <li><a href="#cooking-on-coals"></a></li>
+            <li><a href="#we-bake-pizza"></a></li>
+          </ul>
+        </div>
         <div class="background">
-          <!-- <div class="nav-bar">
-            <ul>
-              <li><a href="#banner"></a>1</li>
-              <li><a href="#food-and-service"></a>2</li>
-              <li><a href="#menu-concept"></a>3</li>
-              <li><a href="#cooking-on-coals"></a>4</li>
-              <li><a href="#we-bake-pizza"></a>5</li>
-            </ul>
-          </div> -->
           <div class="container">
             <div class="banner-content">
               <h1>WOODWOODBURGERS</h1>
@@ -44,12 +49,30 @@
               <form action="javascript:void(0)">
                 <button>Посетить главный сайт</button>
               </form>
-              <a href="#food-and-service"><i class="icon-down-arrow"></i></a>
+              <a href="#food-and-service" class="down-arrow"
+                ><i class="icon-down-arrow"></i
+              ></a>
             </div>
           </div>
         </div>
       </section>
       <section class="food-and-service" id="food-and-service">
+        <div class="nav-bar">
+          <ul>
+            <li>
+              <a href="#banner"></a>
+            </li>
+            <li class="text">
+              <p>Еда и сервис</p>
+            </li>
+            <li>
+              <a href="#food-and-service" class="active"></a>
+            </li>
+            <li><a href="#menu-concept"></a></li>
+            <li><a href="#cooking-on-coals"></a></li>
+            <li><a href="#we-bake-pizza"></a></li>
+          </ul>
+        </div>
         <div class="background">
           <div class="container">
             <h2>Каждый день мы делаем все,</h2>
@@ -58,31 +81,21 @@
           </div>
         </div>
       </section>
-      <!-- <section class="menu-concept">
-        <div class="background">
-          <div class="container">
-            <h2>В основе концепции меню</h2>
-            <p>Техники приготовления на натуральном топливе</p>
-            <div>
-              <ul>
-                <li>
-                  <span class="icon"><i class="icon-coal"></i></span>
-                  <p>Жарим на угля</p>
-                </li>
-                <li>
-                  <span class="icon"><i class="icon-bonfire"></i></span>
-                  <p>Печем на дровах</p>
-                </li>
-                <li>
-                  <span class="icon"><i class="icon-smoke"></i></span>
-                  <p>Томим в дыму</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section> -->
       <section class="menu-concept" id="menu-concept">
+        <div class="nav-bar">
+          <ul>
+            <li><a href="#banner"></a></li>
+            <li><a href="#food-and-service"></a></li>
+            <li class="text">
+              <p>Концепция меню</p>
+            </li>
+            <li>
+              <a href="#menu-concept" class="active"></a>
+            </li>
+            <li><a href="#cooking-on-coals"></a></li>
+            <li><a href="#we-bake-pizza"></a></li>
+          </ul>
+        </div>
         <div class="background">
           <div class="container">
             <div class="fullscreen-bg">
@@ -90,7 +103,7 @@
                 <div class="content">
                   <h2>В основе концепции меню</h2>
                   <p>Техники приготовления на натуральном топливе</p>
-                  <div>
+                  <div class="menu-concept-list">
                     <ul>
                       <li>
                         <span class="icon"><i class="icon-coal"></i></span>
@@ -125,6 +138,20 @@
         </div>
       </section>
       <section class="cooking-on-coals" id="cooking-on-coals">
+        <div class="nav-bar">
+          <ul>
+            <li><a href="#banner"></a></li>
+            <li><a href="#food-and-service"></a></li>
+            <li><a href="#menu-concept"></a></li>
+            <li class="text">
+              <p>Готовим на углях</p>
+            </li>
+            <li>
+              <a href="#cooking-on-coals" class="active"></a>
+            </li>
+            <li><a href="#we-bake-pizza"></a></li>
+          </ul>
+        </div>
         <div class="background">
           <div class="container">
             <div class="fullscreen-bg">
@@ -155,18 +182,21 @@
           </div>
         </div>
       </section>
-      <!-- <section class="we-bake-pizza">
-        <div class="background">
-          <div class="container">
-            <h2>
-              Выпекаем пиццу всего три минуты при температуре
-              <span>почти 500С</span> в дровяной печи.
-            </h2>
-            <p>Так готовят в Италии, так делаем и мы.</p>
-          </div>
-        </div>
-      </section> -->
       <section class="we-bake-pizza" id="we-bake-pizza">
+        <div class="nav-bar">
+          <ul>
+            <li><a href="#banner"></a></li>
+            <li><a href="#food-and-service"></a></li>
+            <li><a href="#menu-concept"></a></li>
+            <li><a href="#cooking-on-coals"></a></li>
+            <li class="text">
+              <p>Выпекаем пиццу</p>
+            </li>
+            <li>
+              <a href="#we-bake-pizza" class="active"></a>
+            </li>
+          </ul>
+        </div>
         <div class="background">
           <div class="container">
             <div class="fullscreen-bg">
@@ -197,7 +227,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <include src="assets/templates/footer.html"></include>
+    <!-- <include src="assets/templates/footer.html"></include> -->
     <!-- Скрипты -->
   </body>
 </html>

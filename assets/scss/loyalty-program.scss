@@ -1,0 +1,72 @@
+.loyalty-program-wrapper {
+  .how-to-join {
+    background: url(../img/loyalty-program-bg1.png) 100% 75% no-repeat;
+    &-wrapper {
+      padding: 9.5vh 0 11vh;
+      border-bottom: 1px solid black;
+      width: 67%;
+      margin: 0 auto;
+      position: relative;
+    }
+    h2 {
+      color: #000000;
+      font-family: 'Cartograph Sans CF';
+      font-size: 38px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 12vh;
+    }
+    h3 {
+      color: #000000;
+      font-family: 'Cartograph Sans CF';
+      font-size: 38px;
+      font-weight: 700;
+      text-align: left;
+      margin-bottom: 5.3vh;
+    }
+    ul {
+      margin-left: 4.8vh;
+      li {
+        p {
+          color: #000000;
+          font-family: 'Cartograph Sans CF';
+          font-size: 16px;
+          font-weight: 700;
+          text-align: left;
+        }
+        ul {
+          margin: 4.3vh 0 6.7vh 1.9vh;
+          display: flex;
+          li:first-of-type {
+            margin-right: 1.4vh;
+          }
+        }
+        a {
+          color: #3dbcbb;
+          text-decoration: underline;
+        }
+        .qr-code {
+          margin: 1.9vh 0 0 15vh;
+        }
+      }
+    }
+  }
+  .how-to-use {
+    &-wrapper {
+      padding: 11vh 0 10vh;
+      border-bottom: 1px solid black;
+      width: 67%;
+      margin: 0 auto;
+      position: relative;
+    }
+    h3 {
+      color: #000000;
+      font-family: 'Cartograph Sans CF';
+      font-size: 38px;
+      font-weight: 700;
+      text-align: left;
+      margin-bottom: 5.3vh;
+    }
+  }
+}

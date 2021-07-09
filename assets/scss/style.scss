@@ -1,4 +1,3 @@
-@import 'libs/button';
 @import 'libs/header';
 @import 'libs/footer';
 @import 'libs/fonts';
@@ -169,10 +168,27 @@ p {
 @media (min-width: 1024px) {
   .fullscreen-bg__video {
     width: 125%;
+    left: -12%;
   }
 }
 @media (min-width: 1280px) {
   .fullscreen-bg__video {
     width: 100%;
+    left: 0%;
+  }
+}
+@media (min-width: 1400px) {
+  .fullscreen-bg__video {
+    top: -10%;
+  }
+}
+@media (min-width: 1900px) {
+  .fullscreen-bg__video {
+    top: -12%;
+  }
+}
+@media (min-width: 2500px) {
+  .fullscreen-bg__video {
+    top: -20%;
   }
 }

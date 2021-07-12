@@ -2,6 +2,7 @@
 @import 'libs/footer';
 @import 'libs/fonts';
 @import 'libs/fontello';
+@import 'fontello';
 @import 'libs/normalize';
 
 body {
@@ -132,6 +133,7 @@ a {
 }
 h1,
 h2,
+h3,
 p {
   margin: 0;
   padding: 0;

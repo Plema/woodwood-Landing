@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.css" data-inprogress="">
+    <link rel="stylesheet" href="../css/about.css" data-inprogress="">
+    <link
+      rel="stylesheet"
+      href="../css/loyalty-program.min.css"
+      data-inprogress=""
+    />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+</head>
+
+<body class="body" id="body">
+    <div class="wrapper">
+
+        <div class="modall modall-address">
+            <div class="modall-body">
+                <span class="close"></span>
+                <h4>Добавить адрес доставки</h4>
+                <form class="form">
+                    <div class="form-content">
+                        <div class="form-column">
+                            <input type="text" placeholder="Город">
+                        </div>
+                        <div class="form-column">
+                            <input type="text" placeholder="Улица">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-column">
+                                <input type="text" placeholder="Дом">
+                            </div>
+                            <div class="form-column">
+                                <input type="text" placeholder="Строение / корпус">
+                            </div>
+                            <div class="form-column">
+                                <input type="text" placeholder="Этаж">
+                            </div>
+                            <div class="form-column">
+                                <input type="text" placeholder="Домофон">
+                            </div>
+                        </div>
+                        <div class="form-column">
+                            <input type="text" placeholder="Квартира / офис">
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn">Добавить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="modall modall-review">
+            <div class="modall-body">
+                <span class="close"></span>
+                <h4>Оставить отзыв</h4>
+                <form class="form">
+                    <div class="form-content">
+                        <div class="form-column">
+                            <input type="text" placeholder="E-mail">
+                        </div>
+                        <div class="form-column">
+                            <input type="text" placeholder="Телефон" class="telephone">
+                        </div>
+                        <div class="form-column">
+                            <textarea placeholder="Отзыв о заказе"></textarea>
+                        </div>
+                        <div class="action">
+                            <button class="btn">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="modall modall-code">
+            <div class="modall-body">
+                <span class="close"></span>
+                <h4>Введите код из e-mail сообщения
+                </h4>
+                <form class="form">
+                    <div class="form-content">
+                        <div class="form-column">
+                            <input type="text" placeholder="Код">
+                        </div>
+                        <div class="action">
+                            <button class="btn">Подтвердить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="modall modall-code-sms">
+            <div class="modall-body">
+                <span class="close"></span>
+                <h4>Введите код из СМС</h4>
+                <form class="form">
+                    <div class="form-content">
+                        <div class="form-column">
+                            <input type="text" placeholder="Код">
+                        </div>
+                        <div class="action">
+                            <button class="btn">Подтвердить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="modall modall-promo">
+            <div class="modall-body">
+                <span class="close"></span>
+                <h4>Промо-код</h4>
+                <form class="form">
+                    <div class="form-content">
+                        <div class="form-column">
+                            <!-- за включение текста ошибки отвечает класс .active -->
+                            <span class="eror">Не верный промо-код =(</span>
+                            <input type="text" placeholder="Введите Ваш промо-код">
+                        </div>
+                        <div class="action">
+                            <button class="btn">Применить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="modall modall-accepted">
+            <div class="modall-body">
+                <span class="close"></span>
+                <h4>Ваш заказ <span>№ 456</span> принят. Приятного аппетита!</h4>
+                <div class="action">
+                    <button class="btn">На главную</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modall modall-over">
+            <div class="modall-body">
+                <span class="close"></span>
+                <h4>Блюдо закончилось =(</h4>
+                <span class="description">Попробуйте выбрать что то другое</span>
+                <ul>
+                    <li>Маргарита</li>
+                    <li>Дабл блючиз</li>
+                </ul>
+                <div class="action">
+                    <button class="btn">В меню</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modall modall-options">
+            <div class="modall-body">
+                <span class="close"></span>
+                <h4>Выберите опции</h4>
+                <form class="form customScrollVertical">
+                    <span class="title">Убрать</span>
+                    <div class="form-group">
+                        <div class="form-column ">
+                            <input type="checkbox" name="checkbox-1">
+                            <label for="checkbox-1">Лук</label>
+                        </div>
+                        <div class="form-column ">
+                            <input type="checkbox" name="checkbox-2">
+                            <label for="checkbox-2">Булочку</label>
+                        </div>
+                        <div class="form-column ">
+                            <input type="checkbox" name="checkbox-3">
+                            <label for="checkbox-3">Сыр</label>
+                        </div>
+                        <div class="form-column ">
+                            <input type="checkbox" name="checkbox-4">
+                            <label for="checkbox-4">Чеснок</label>
+                        </div>
+                    </div>
+                    <span class="title">Добавить</span>
+                    <div class="form-group">
+                        <div class="form-column ">
+                            <input type="checkbox" name="checkbox-6">
+                            <label for="checkbox-6">Сыр<span>30р.</span></label>
+                        </div>
+                        <div class="form-column ">
+                            <input type="checkbox" name="checkbox-7">
+                            <label for="checkbox-7">Котлета<span>75р.</span></label>
+                        </div>
+                        <div class="form-column ">
+                            <input type="checkbox" name="checkbox-8">
+                            <label for="checkbox-8">Лук<span>25р.</span></label>
+                        </div>
+                        <div class="form-column ">
+                            <input type="checkbox" name="checkbox-9">
+                            <label for="checkbox-9">Соус<span>10р.</span></label>
+                        </div>
+                        <div class="form-column ">
+                            <input type="checkbox" name="checkbox-10">
+                            <label for="checkbox-10">Булочку<span>15р.</span></label>
+                        </div>
+                        <div class="form-column ">
+                            <input type="checkbox" name="checkbox-11">
+                            <label for="checkbox-11">Омлет<span>40р.</span></label>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <div class="total">
+                            <span>Итого:</span>
+                            <span>455р.</span>
+                        </div>
+                        <button class="btn">Добавить без опций</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="modall modall-basket">
+            <div class="modall-body">
+                <span class="close"></span>
+                <h4>Добавим в заказ?</h4>
+                <ul class="customScrollVertical">
+                    <li>
+                        <img src="../img/img-5.jpg" alt="">
+                        <div class="title">
+                            <a href="card-product.html">Лимон-мята</a>
+                            <span>320р.</span>
+                            <button type="button" class="btn">Добавить в заказ</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../img/img-6.jpg" alt="">
+                        <div class="title">
+                            <a href="card-product.html">Лимон-манго</a>
+                            <span>320р.</span>
+                            <button type="button" class="btn">Добавить в заказ</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../img/img-7.jpg" alt="">
+                        <div class="title">
+                            <a href="card-product.html">Лимон-киви</a>
+                            <span>320р.</span>
+                            <button type="button" class="btn">Добавить в заказ</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../img/img-10.jpg" alt="">
+                        <div class="title">
+                            <a href="card-product.html">Фокачча</a>
+                            <span>480р.</span>
+                            <button type="button" class="btn">Добавить в заказ</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../img/img-12.jpg" alt="">
+                        <div class="title">
+                            <a href="card-product.html">Папперони</a>
+                            <span>470р.</span>
+                            <button type="button" class="btn">Добавить в заказ</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../img/img-11.jpg" alt="">
+                        <div class="title">
+                            <a href="card-product.html">Пицца с море
+                        продуктами</a>
+                            <span>450р.</span>
+                            <button type="button" class="btn">Добавить в заказ</button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="action">
+                    <button class="btn">Продолжить</button>
+                </div>
+            </div>
+        </div>
+
+        <main class="main">
+
+            <div class="menu-mobile">
+                <nav>
+                    <ul>
+                        <li><a href="home.html#anchor" class="go-to">Бургеры</a></li>
+                        <li><a href="home.html#anchor2" class="go-to">Пицца</a></li>
+                        <li><a href="javascript:void(0);">Мясо</a></li>
+                        <li><a href="javascript:void(0);">Сеты</a></li>
+                        <li><a href="javascript:void(0);">Десерты</a></li>
+                        <li><a href="home.html#anchor4" class="go-to">Пиво</a></li>
+                        <li><a href="javascript:void(0);">Гарниры</a></li>
+                        <li><a href="javascript:void(0);">Супы</a></li>
+                        <li><a href="javascript:void(0);">Салаты</a></li>
+                        <li><a href="javascript:void(0);">Закуски</a></li>
+                        <li><a href="javascript:void(0);">Блюда из смоукера</a></li>
+                        <li><a href="home.html#anchor2" class="go-to">Напитки</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="about.html">Рестораны</a></li>
+                        <li><a href="http://catering.woodwoodbar.com/" target="_blank">Кейтеринг</a></li>
+                        <li><a href="log-in.html" class="cabinet">ВХОД</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <header class="header header-reguest">
+                <div class="container">
+                    <span class="open-menu">
+            <span></span>
+                    </span>
+                    <div class="navigation">
+                        <div class="logo"><a href="index.html"><img src="../img/logo.png"></a></div>
+                        <div class="menu">
+                            <a href="log-in.html" class="cabinet">ВХОД</a>
+                            <a href="basket.html" class="basket"><span>+13</span></a>
+                            <a href="basket.html" class="btn">5950 ₽</a>
+                        </div>
+                    </div>
+                    <nav>
+                        <div class="submenu">
+                            <ul>
+                                <li>
+                                    <a href="home.html#anchor2" class="go-to">Пицца</a>
+                                    <a href="javascript:void(0);">Гарниры</a>
+                                </li>
+                                <li>
+                                    <a href="home.html#anchor" class="go-to">Бургеры</a>
+                                    <a href="javascript:void(0);">Соусы</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Бургер-сеты</a>
+                                    <a href="javascript:void(0);">Закуски</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Мясо</a>
+                                    <a href="javascript:void(0);">Десерты</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Салаты</a>
+                                    <a href="home.html#anchor3" class="go-to">Напитки</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Супы</a>
+                                    <a href="home.html#anchor4" class="go-to">Пиво</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-link">
+                            <ul>
+                                <li><a href="about.html">Рестораны</a></li>
+                                <li><a href="http://catering.woodwoodbar.com/" target="_blank">Кейтеринг</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <nav class="nav-mobile">
+                <div class="submenu customScroll">
+                    <ul>
+                        <li>
+                            <a href="home.html#anchor2" class="go-to">Пицца</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">Гарниры</a>
+                        </li>
+                        <li>
+                            <a href="home.html#anchor" class="go-to">Бургеры</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">Соусы</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">Бургер-сеты</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">Закуски</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">Мясо</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">Десерты</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">Салаты</a>
+                        </li>
+                        <li>
+                            <a href="home.html#anchor3" class="go-to">Напитки</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">Супы</a>
+                        </li>
+                        <li>
+                            <a href="home.html#anchor4" class="go-to">Пиво</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="how-to-join">
+        <div class="how-to-join-wrapper">
+          <h2 class="how-to-join-title">программы лояльности</h2>
+          <h3>Как присоединиться?</h3>
+          <ul>
+            <li>
+              <p>1. Скачайте и установите бесплатное приложение UDS в:</p>
+              <ul>
+                <li>
+                  <a href="javascript:void(0)"></a
+                  ><img src="../img/appStore.svg" />
+                </li>
+                <li>
+                  <a href="javascript:void(0)"></a
+                  ><img src="../img/googlePlay.svg" />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>
+                2. Отсканируйте QR или пройдите по
+                <a href="javascript:void(0)">ссылке </a>
+              </p>
+              <img src="../img/qr-code.svg" class="qr-code" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="how-to-use">
+        <div class="how-to-use-wrapper">
+          <h3>Как использовать?</h3>
+          <ul>
+            <li>
+              <div>
+                <span class="icon-first"
+                  ><i class="icon-shopping-basket"></i
+                ></span>
+              </div>
+              <p class="title-first">Добавьте нужные товары в корзину</p>
+            </li>
+            <li>
+              <div>
+                <span class="icon-second"><i class="icon-basket"></i></span>
+              </div>
+              <p class="title-second">Перейдите в корзину</p>
+            </li>
+            <li>
+              <div>
+                <span class="icon-third"
+                  ><i class="icon-touch-screen"></i
+                ></span>
+              </div>
+              <p class="title-third">
+                Откройте приложение UDS и вы увидите шестизначный промокод
+              </p>
+            </li>
+            <li>
+              <div>
+                <span class="icon-fourth"
+                  ><i class="icon-binary-code"></i
+                ></span>
+              </div>
+              <p class="title-fourth">
+                Введите его в поле «код UDS» в корзине и нажмите кнопку
+                «отправить»
+              </p>
+            </li>
+            <li>
+              <div>
+                <span class="icon-fifth"><i class="icon-promotions"></i></span>
+              </div>
+              <p class="title-fifth">
+                Введите любую сумму вплоть до 30% от суммы заказа и нажмите
+                «применить»
+              </p>
+            </li>
+            <li>
+              <div>
+                <span class="icon-sixth"><i class="icon-discount"></i></span>
+              </div>
+              <p class="title-sixth">
+                Все готово, скидка уже применилась к вашему заказу
+              </p>
+            </li>
+          </ul>
+          <p class="attention-text">
+            Обратите внимание, что баллы списываются, только после
+            окончательного формирования заказа, поэтому если вы измените заказ,
+            после введения кода UDS, вам потребуется повторить операцию.
+          </p>
+        </div>
+      </section>
+      <section class="recommend-us">
+        <div class="recommend-us-wrapper">
+          <h2>Рекомендуйте нас друзьям</h2>
+          <p>
+            Рекомендуйте нас своим друзьям и получайте баллы еще и за их заказы.
+          </p>
+          <p>
+            Для этого просто нажмите кнопку <span>«рекомендуйте нас»</span> в
+            приложении UDS
+          </p>
+        </div>
+      </section>
+            <div class="container">
+
+                <!-- <section class="section section-map" id="map">
+                 
+                </section> -->
+                
+                <footer class="footer">
+                    <div class="nav">
+                        <div class="logo">
+                            <a href="index.html">
+                <img src="../img/logo-small.png">
+            </a>
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="delivery.html">Доставка</a></li>
+                                <li><a href="about.html">Рестораны</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#" target="_blank">Instagram</a></li>
+                                <li><a href="#" target="_blank">Facebook</a></li>
+                            </ul>
+                        </div>
+                        <form>
+                            <div class="form-column">
+                                <label>Кейтеринг</label>
+                                <input type="text" placeholder="Введите Ваш e-mail">
+                            </div>
+                            <div class="form-action">
+                                <span>Оставьте свой e-mail
+                    и мы с Вами свяжемся</span>
+                                <button type="submit">
+                    Отправить
+                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>© 2019-2020 г. ИП Породников В.В.</p>
+                        <a href="politic.html" class="politic">Пользовательское соглашение</a>
+                        <a href="https://studio-touch.ru/" class="made">Made with ❤️ by Studio Touch</a>
+                    </div>
+                </footer>
+
+            </div>
+
+        </main>
+    </div>
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jcf.radio.min.js"></script>
+    <script src="../js/inputmask.js"></script>
+    <script src="../js/jquery.eymaps.js"></script>
+    <script src="../js/main.min.js"></script>
+    <script src="../js/about.min.js"></script>
+
+</html>

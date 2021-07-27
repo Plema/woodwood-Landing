@@ -1,0 +1,14 @@
+.slider {
+  position: relative;
+  &-item {
+    transition: all 0.5s ease 0s;
+    height: 100vh;
+  }
+  .slick-list {
+    overflow: hidden;
+    height: 100vh !important;
+  }
+  .slick-track {
+    display: block;
+  }
+}

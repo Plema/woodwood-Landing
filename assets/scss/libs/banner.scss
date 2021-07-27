@@ -1,11 +1,44 @@
-.wrapper-slider {
-  background-size: cover;
-  background-position: 20% 0;
-  width: 100%;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  position: relative;
-  h2 {
-    color: blueviolet;
+.banner {
+  .wrapper-slider {
+    background-color: blue;
+    background-size: cover;
+    background-position: 20% 0;
+    width: 100%;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    position: relative;
+    &__one {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../img/slide-1.png) 50% 0 no-repeat;
+      background-size: cover;
+    }
+    &__two {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../img/slide-2.png) no-repeat;
+      background-size: cover;
+    }
+    &__three {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../img/slide-3.png) 83% 0 no-repeat;
+      background-size: cover;
+    }
+    &__four {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../img/slide-4.png) 14% 0 no-repeat;
+      background-size: cover;
+    }
+    &__five {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../img/slide-5.png) 60% no-repeat;
+      background-size: cover;
+    }
+    &__six {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../img/slide-6.png) 50% no-repeat;
+      background-size: cover;
+    }
+    h2 {
+      color: blueviolet;
+    }
   }
 }

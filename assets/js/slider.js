@@ -8,23 +8,13 @@ $(document).ready(function () {
     speed: 1000,
     easing: 'linear',
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     pauseOnDotsHover: true,
     pauseOnFocus: true,
     pauseOnHover: true,
     draggable: false,
     swipe: true,
-    // waitForAnimate: false,
-    // centerMode: false,
-    // variableWidth: false,
-    // vertical: true,
-    // verticalSwiping: true,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {},
-    //   },
-    // ],
+    waitForAnimate: false,
   });
 });

@@ -1,6 +1,208 @@
 .banner {
+  position: relative;
+  .social-link {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 28%;
+    .social-icon {
+      cursor: pointer;
+      width: 40.64px;
+      height: 40.64px;
+      i {
+        font-size: 40px;
+        color: rgba(255, 255, 255, 0.7);
+        &:hover,
+        &:focus {
+          color: #ffb100;
+        }
+      }
+    }
+    @media (min-height: 560px) {
+      bottom: 33%;
+    }
+    @media (min-width: 768px) {
+      bottom: 27%;
+    }
+    @media (min-width: 1024px) {
+      top: 25.5%;
+      left: 15%;
+      z-index: 15;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 8%;
+        left: -135%;
+        width: 147px;
+        height: 1px;
+        background: #fff;
+        // transform: translate(-50%, -50%);
+      }
+    }
+    @media (min-width: 1400px) {
+      top: 26%;
+      &::after {
+        top: 6%;
+        left: -165%;
+      }
+      .social-icon {
+        i {
+          font-size: 34px;
+        }
+      }
+    }
+    @media (min-width: 1900px) {
+      top: 26.5%;
+      left: 12%;
+      &::after {
+        top: 4.5%;
+        left: -223%;
+      }
+      .social-icon {
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .content {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 52.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      font-family: 'Cartograph Sans CF - Bold';
+      font-size: 26px;
+      text-align: center;
+      color: #f6c932;
+      margin-bottom: 51px;
+      position: relative;
+      line-height: 1.19;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -80%;
+        left: 50%;
+        width: 90px;
+        height: 1px;
+        background: #fff;
+        transform: translate(-50%, -50%);
+      }
+    }
+    p {
+      font-family: 'Cartograph Sans CF - DemiBold';
+      font-size: 18px;
+      &:first-of-type {
+        margin-bottom: 7px;
+      }
+      &:last-of-type {
+        margin-bottom: 60px;
+      }
+    }
+    button {
+      min-width: 278px;
+      min-height: 56px;
+      background-color: rgba(196, 196, 196, 0.15);
+      border: 1px solid #fff;
+      outline: none;
+      padding: 10px;
+      font-style: 500;
+      font-size: 18px;
+      &:hover {
+        border: 1px solid #ffb100;
+        background: rgba(196, 196, 196, 0.22);
+      }
+    }
+
+    .down-arrow {
+      display: none;
+    }
+    @media (min-height: 560px) {
+      top: 53.5%;
+      p {
+        &:last-of-type {
+          margin-bottom: 110px;
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      top: 58%;
+      h1 {
+        font-size: 38px;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+    @media (min-width: 1024px) {
+      top: 54%;
+      h1 {
+        font-size: 46px;
+        &::after {
+          width: 169px;
+        }
+      }
+      p {
+        font-size: 40px;
+        :last-of-type {
+          margin-bottom: 170px;
+        }
+      }
+      button {
+        height: 56px;
+        margin: 0 auto;
+        margin-bottom: 90px;
+      }
+      .down-arrow {
+        display: flex;
+        margin: 0 auto;
+        font-size: 25px;
+        width: 48px;
+        height: 48px;
+        border: 1px solid;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          border: 1px solid #ffb100;
+          background: rgba(196, 196, 196, 0.22);
+        }
+      }
+    }
+    @media (min-width: 1280px) {
+    }
+    @media (min-width: 1400px) {
+      h1 {
+        font-size: 60px;
+        margin-bottom: 81px;
+      }
+    }
+    @media (min-width: 1900px) {
+      top: 60%;
+      h1 {
+        font-size: 75px;
+        &::after {
+          bottom: -60%;
+        }
+      }
+      p {
+        font-size: 46px;
+        &:last-of-type {
+          margin-bottom: 200px;
+        }
+      }
+      button {
+        margin-bottom: 60px;
+      }
+    }
+    @media (min-width: 2500px) {
+    }
+  }
   .wrapper-slider {
-    background-color: blue;
+    background-color: #b3e197;
     background-size: cover;
     background-position: 20% 0;
     width: 100%;
@@ -8,37 +210,62 @@
     height: calc(var(--vh, 1vh) * 100);
     position: relative;
     &__one {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(../img/slide-1.png) 50% 0 no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slide-1.png) 50% 0% no-repeat;
       background-size: cover;
     }
     &__two {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(../img/slide-2.png) no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slide-2.png) no-repeat;
       background-size: cover;
     }
     &__three {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(../img/slide-3.png) 83% 0 no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slide-3.png) 83% 0 no-repeat;
       background-size: cover;
     }
     &__four {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(../img/slide-4.png) 14% 0 no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slide-4.png) 14% 0 no-repeat;
       background-size: cover;
     }
     &__five {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(../img/slide-5.png) 60% no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slide-5.png) 60% no-repeat;
       background-size: cover;
     }
     &__six {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(../img/slide-6.png) 50% no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slide-6.png) 50% no-repeat;
       background-size: cover;
     }
-    h2 {
-      color: blueviolet;
+  }
+  @media (min-width: 1024px) {
+    .wrapper-slider {
+      &__one {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slide-1-big.png) 0 0 no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &__two {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slide-2.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &__three {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slide-3.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &__four {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slide-4.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &__five {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slide-5.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &__six {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slide-6.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
     }
   }
 }

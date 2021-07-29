@@ -69,7 +69,7 @@
     width: 100%;
     position: absolute;
     text-align: center;
-    top: 52.5%;
+    top: 41%;
     left: 50%;
     transform: translate(-50%, -50%);
     h1 {
@@ -97,22 +97,25 @@
       &:first-of-type {
         margin-bottom: 7px;
       }
-      &:last-of-type {
-        margin-bottom: 60px;
-      }
     }
-    button {
-      min-width: 278px;
-      min-height: 56px;
-      background-color: rgba(196, 196, 196, 0.15);
-      border: 1px solid #fff;
-      outline: none;
-      padding: 10px;
-      font-style: 500;
-      font-size: 18px;
-      &:hover {
-        border: 1px solid #ffb100;
-        background: rgba(196, 196, 196, 0.22);
+    form {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      bottom: -104%;
+      button {
+        min-width: 278px;
+        min-height: 56px;
+        background-color: rgba(196, 196, 196, 0.15);
+        border: 1px solid #fff;
+        outline: none;
+        padding: 10px;
+        font-style: 500;
+        font-size: 18px;
+        &:hover {
+          border: 1px solid #ffb100;
+          background: rgba(196, 196, 196, 0.22);
+        }
       }
     }
 
@@ -120,15 +123,10 @@
       display: none;
     }
     @media (min-height: 560px) {
-      top: 53.5%;
-      p {
-        &:last-of-type {
-          margin-bottom: 110px;
-        }
-      }
+      top: 40%;
     }
     @media (min-width: 768px) {
-      top: 58%;
+      top: 45%;
       h1 {
         font-size: 38px;
       }
@@ -137,23 +135,26 @@
       }
     }
     @media (min-width: 1024px) {
-      top: 54%;
+      top: 37%;
       h1 {
         font-size: 46px;
         &::after {
           width: 169px;
+          bottom: -70%;
         }
       }
       p {
         font-size: 40px;
-        :last-of-type {
-          margin-bottom: 170px;
+        &:first-of-type {
+          margin-bottom: 20px;
         }
       }
-      button {
-        height: 56px;
-        margin: 0 auto;
-        margin-bottom: 90px;
+      form {
+        bottom: -80%;
+        button {
+          height: 56px;
+          margin: 0 auto;
+        }
       }
       .down-arrow {
         display: flex;
@@ -166,6 +167,10 @@
         transition: all 0.3s ease-in-out;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        bottom: -120%;
+        left: 50%;
         &:hover {
           border: 1px solid #ffb100;
           background: rgba(196, 196, 196, 0.22);
@@ -175,13 +180,20 @@
     @media (min-width: 1280px) {
     }
     @media (min-width: 1400px) {
+      top: 33%;
       h1 {
         font-size: 60px;
         margin-bottom: 81px;
       }
+      form {
+        bottom: -60%;
+      }
+      .down-arrow {
+        bottom: -100%;
+      }
     }
     @media (min-width: 1900px) {
-      top: 60%;
+      top: 39%;
       h1 {
         font-size: 75px;
         &::after {
@@ -190,12 +202,12 @@
       }
       p {
         font-size: 46px;
-        &:last-of-type {
-          margin-bottom: 200px;
-        }
       }
-      button {
-        margin-bottom: 60px;
+      form {
+        bottom: -75%;
+      }
+      .down-arrow {
+        bottom: -115%;
       }
     }
     @media (min-width: 2500px) {
@@ -232,6 +244,62 @@
     &__six {
       background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slide-6.png) 50% no-repeat;
       background-size: cover;
+    }
+  }
+  .nav-bar {
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      left: 2.5%;
+      transform: translate(-50%, 50%);
+      ul {
+        display: flex;
+        align-items: center;
+        transform: rotate(90deg);
+        width: fit-content;
+        li {
+          display: flex;
+          flex-direction: column-reverse;
+          width: 10px;
+          height: 10px;
+          border: 1px solid;
+          border-radius: 50%;
+          position: relative;
+          cursor: pointer;
+          &:not(:last-child) {
+            margin-right: 15px;
+          }
+          a {
+            display: block;
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .text {
+          width: fit-content;
+          border: none;
+          transform: rotate(180deg);
+          display: inline-block;
+          p {
+            line-height: 8px;
+            font-size: 16px;
+          }
+        }
+        .active {
+          display: block;
+          position: absolute;
+          bottom: 15%;
+          left: 50%;
+          width: 6px;
+          height: 6px;
+          border: 1px solid #ffb100;
+          border-radius: 50%;
+          background: #ffb100;
+        }
+      }
     }
   }
   @media (min-width: 1024px) {

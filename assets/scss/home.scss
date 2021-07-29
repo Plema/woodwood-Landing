@@ -29,63 +29,63 @@ main {
     height: 103px;
   }
 }
-.nav-bar {
-  display: none;
-  @media (min-width: 1024px) {
-    display: block;
-    position: absolute;
-    z-index: 10;
-    top: 50%;
-    left: 2.5%;
-    transform: translate(-50%, 50%);
-    ul {
-      display: flex;
-      align-items: center;
-      transform: rotate(90deg);
-      width: fit-content;
-      li {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 10px;
-        height: 10px;
-        border: 1px solid;
-        border-radius: 50%;
-        position: relative;
-        cursor: pointer;
-        &:not(:last-child) {
-          margin-right: 15px;
-        }
-        a {
-          display: block;
-          width: 20px;
-          height: 20px;
-        }
-      }
-      .text {
-        width: fit-content;
-        border: none;
-        transform: rotate(180deg);
-        display: inline-block;
-        p {
-          line-height: 8px;
-          font-size: 16px;
-        }
-      }
-      .active {
-        display: block;
-        position: absolute;
-        transform: translate(-50%, 50%);
-        left: 50%;
-        top: -30%;
-        width: 6px;
-        height: 6px;
-        border: 1px solid #ffb100;
-        border-radius: 50%;
-        background: #ffb100;
-      }
-    }
-  }
-}
+// .nav-bar {
+//   display: none;
+//   @media (min-width: 1024px) {
+//     display: block;
+//     position: absolute;
+//     z-index: 10;
+//     top: 50%;
+//     left: 2.5%;
+//     transform: translate(-50%, 50%);
+//     ul {
+//       display: flex;
+//       align-items: center;
+//       transform: rotate(90deg);
+//       width: fit-content;
+//       li {
+//         display: flex;
+//         flex-direction: column-reverse;
+//         width: 10px;
+//         height: 10px;
+//         border: 1px solid;
+//         border-radius: 50%;
+//         position: relative;
+//         cursor: pointer;
+//         &:not(:last-child) {
+//           margin-right: 15px;
+//         }
+//         a {
+//           display: block;
+//           width: 20px;
+//           height: 20px;
+//         }
+//       }
+//       .text {
+//         width: fit-content;
+//         border: none;
+//         transform: rotate(180deg);
+//         display: inline-block;
+//         p {
+//           line-height: 8px;
+//           font-size: 16px;
+//         }
+//       }
+//       .active {
+//         display: block;
+//         position: absolute;
+//         transform: translate(-50%, 50%);
+//         left: 50%;
+//         top: -30%;
+//         width: 6px;
+//         height: 6px;
+//         border: 1px solid #ffb100;
+//         border-radius: 50%;
+//         background: #ffb100;
+//       }
+//     }
+//   }
+// }
 .food-and-service {
   position: relative;
   .nav-bar {
@@ -138,9 +138,9 @@ main {
           top: -30%;
           width: 6px;
           height: 6px;
-          border: 1px solid #ffb100;
+          border: 1px solid #b3e197;
           border-radius: 50%;
-          background: #ffb100;
+          background: #b3e197;
         }
       }
     }
@@ -294,60 +294,64 @@ main {
 .menu-concept {
   position: relative;
   .nav-bar {
-    position: absolute;
-    z-index: 10;
-    top: 60%;
-    left: 2.5%;
-    transform: translate(-50%, 50%);
-    ul {
-      display: flex;
-      align-items: center;
-      transform: rotate(90deg);
-      width: fit-content;
-      li {
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      left: 2.5%;
+      transform: translate(-50%, 50%);
+      ul {
         display: flex;
-        flex-direction: column-reverse;
-        width: 8px;
-        height: 8px;
-        border: 1px solid;
-        border-radius: 50%;
-        position: relative;
-        cursor: pointer;
-        &:not(:last-child) {
-          margin-right: 15px;
-        }
-        a {
-          display: block;
-          width: 20px;
-          height: 20px;
-        }
-      }
-      .text {
+        align-items: center;
+        transform: rotate(90deg);
         width: fit-content;
-        border: none;
-        transform: rotate(180deg);
-        display: inline-block;
-        p {
-          line-height: 8px;
-          font-size: 10px;
+        li {
+          display: flex;
+          flex-direction: column-reverse;
+          width: 10px;
+          height: 10px;
+          border: 1px solid;
+          border-radius: 50%;
+          position: relative;
+          cursor: pointer;
+          &:not(:last-child) {
+            margin-right: 15px;
+          }
+          a {
+            display: block;
+            width: 20px;
+            height: 20px;
+          }
         }
-      }
-      .active {
-        display: block;
-        position: absolute;
-        bottom: 15%;
-        left: 15%;
-        width: 4px;
-        height: 4px;
-        border: 1px solid #ffb100;
-        border-radius: 50%;
-        background: #ffb100;
+        .text {
+          width: fit-content;
+          border: none;
+          transform: rotate(180deg);
+          display: inline-block;
+          p {
+            line-height: 8px;
+            font-size: 16px;
+          }
+        }
+        .active {
+          display: block;
+          position: absolute;
+          bottom: 15%;
+          left: 16%;
+          width: 6px;
+          height: 6px;
+          border: 1px solid #e197d2;
+          border-radius: 50%;
+          background: #e197d2;
+        }
       }
     }
   }
   .background {
     background: url(../img/menu-concept-bg.png) 80% no-repeat;
-    height: 100vh;
+    height: 781px;
     background-size: cover;
   }
   .container {
@@ -355,18 +359,23 @@ main {
     height: 100%;
   }
   .content {
-    padding-top: 7vh;
+    padding: 65px 10px;
   }
   h2 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 1.21;
+    text-align: center;
     text-transform: uppercase;
-    margin-bottom: 5vh;
+    margin-bottom: 16px;
+    color: #e197d2;
   }
   p {
     font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 6vh;
+    font-size: 16px;
+    line-height: 1.21;
+    margin-bottom: 51px;
+    padding: 0 20px;
   }
   .menu-concept-list {
     ul {
@@ -384,90 +393,114 @@ main {
           justify-content: center;
           align-items: center;
           position: relative;
-          width: 70px;
-          height: 70px;
+          width: 64px;
+          height: 64px;
           font-size: 40px;
           border: 1px solid #fff;
           border-radius: 50%;
           background: rgba(0, 0, 0, 0.55);
           i {
             position: absolute;
-            bottom: 2vh;
-            color: #ffb100;
+            bottom: 15%;
+            color: #e197d2;
           }
         }
         p {
-          margin-top: 1vh;
-          margin-bottom: 3vh;
           font-weight: 500;
-          font-size: 14px;
+          font-size: 16px;
+          line-height: 1.21;
+          text-align: center;
+          margin-top: 16px;
+          margin-bottom: 52px;
+          padding: 0;
         }
+      }
+      li:first-of-type::after {
+        content: '-';
+        position: absolute;
+        top: 22%;
+        left: 48%;
+        font-size: 40px;
+        transform: translate(0, -50%);
+        transform: rotate(90deg);
+      }
+      li:last-of-type::before {
+        content: '-';
+        position: absolute;
+        top: 56%;
+        left: 48%;
+        font-size: 40px;
+        transform: translate(0, -50%);
+        transform: rotate(90deg);
       }
     }
   }
   @media (min-width: 768px) {
     .background {
       background: url(../img/menu-concept-bg.png) 75% no-repeat;
-      height: 100vh;
+      min-height: 100vh;
       background-size: cover;
     }
     h2 {
-      font-size: 32px;
+      font-size: 36px;
+      width: 450px;
+      margin: 0 auto 16px;
     }
     p {
-      font-size: 22px;
+      font-size: 20px;
+      width: 450px;
+      margin: 0 auto 51px;
     }
     .menu-concept-list {
       ul {
-        li {
-          .icon {
-            width: 80px;
-            height: 80px;
-            font-size: 50px;
-          }
-          p {
-            margin-top: 1vh;
-            margin-bottom: 4vh;
-            font-weight: 500;
-            font-size: 14px;
-          }
+        li:first-of-type::after {
+          left: 49%;
+        }
+        li:last-of-type::before {
+          left: 49%;
         }
       }
     }
   }
   @media (min-width: 1024px) {
-    .nav-bar {
-      top: 50%;
-      ul {
-        .text {
-          p {
-            line-height: 8px;
-            font-size: 14px;
-          }
-        }
-        .active {
-          bottom: 10%;
-          left: 17%;
-          width: 4px;
-          height: 4px;
-        }
-      }
-    }
     .background {
-      background: url(../img/menu-concept-bg.png) 75% no-repeat;
-      height: 100vh;
+      background: #9cc3ef;
+      min-height: 100vh;
       background-size: cover;
     }
     .content {
-      padding-top: 17vh;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      width: 100%;
+      padding: 0;
     }
     h2 {
-      font-size: 36px;
-      margin-bottom: 7vh;
+      font-size: 44px;
+      width: 100%;
+      margin: 0 auto 22px;
+      &::after,
+      &::before {
+        content: '----';
+        position: absolute;
+        top: 59%;
+        left: 30.5%;
+        font-size: 36px;
+        transform: translate(0, -50%);
+        color: #fff;
+      }
+      &::after {
+        left: 31.5%;
+      }
+      &::before {
+        left: 59.5%;
+      }
     }
     p {
       font-size: 26px;
-      margin-bottom: 11vh;
+      width: 100%;
+      margin: 0 auto 90px;
     }
     .menu-concept-list {
       ul {
@@ -476,271 +509,142 @@ main {
         align-items: center;
         li {
           .icon {
-            width: 120px;
-            height: 120px;
-            font-size: 70px;
+            width: 146px;
+            height: 146px;
+            font-size: 58px;
             i {
-              margin-bottom: 1vh;
+              position: absolute;
+              transform: translate(-50%, -50%);
+              left: 50%;
+              top: 43%;
             }
           }
           p {
-            margin-top: 3vh;
+            margin-top: 33px;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 22px;
+          }
+          &::after,
+          &::before {
+            display: none;
           }
         }
-        li:first-of-type::after {
-          content: '----';
-          position: absolute;
-          top: 29%;
-          left: 32.5%;
-          font-size: 36px;
-          transform: translate(0, -50%);
-        }
-        li:last-of-type::before {
-          content: '----';
-          position: absolute;
-          top: 29%;
-          right: 32.5%;
-          font-size: 36px;
-          transform: translate(0, -50%);
-        }
+
         li:not(:last-child) {
-          margin-right: 12%;
+          margin-right: 108px;
         }
       }
     }
   }
   @media (min-width: 1280px) {
-    .background {
-      background: url(../img/menu-concept-bg.png) no-repeat;
-      height: 100vh;
-      background-size: cover;
-    }
     h2 {
-      font-size: 40px;
-    }
-    p {
-      font-size: 30px;
-    }
-    .menu-concept-list {
-      ul {
-        li {
-          .icon {
-            width: 126px;
-            height: 126px;
-            font-size: 70px;
-          }
-          p {
-            margin-top: 3.5vh;
-            font-size: 18px;
-          }
-        }
-        li:first-of-type::after {
-          left: 37%;
-          font-size: 32px;
-        }
-        li:last-of-type::before {
-          right: 37%;
-          font-size: 32px;
-        }
-        li:not(:last-child) {
-          margin-right: 15vh;
-        }
+      &::after,
+      &::before {
+        top: 58%;
+      }
+      &::after {
+        left: 35.5%;
+      }
+      &::before {
+        left: 57.5%;
       }
     }
   }
   @media (min-width: 1400px) {
-    .nav-bar {
-      ul {
-        .text {
-          p {
-            line-height: 8px;
-            font-size: 14px;
-          }
-        }
+    h2 {
+      font-size: 56px;
+
+      &::after,
+      &::before {
+        top: 58%;
+      }
+      &::after {
+        left: 37%;
+      }
+      &::before {
+        left: 57%;
       }
     }
-    .menu-concept-list {
-      ul {
-        li {
-          .icon {
-            width: 136px;
-            height: 136px;
-            font-size: 75px;
-          }
-          p {
-            font-size: 20px;
-          }
-        }
-        li:first-of-type::after {
-          left: 38%;
-          font-size: 32px;
-        }
-        li:last-of-type::before {
-          right: 38%;
-          font-size: 32px;
-        }
-        li:not(:last-child) {
-          margin-right: 15vh;
-        }
-      }
+    p {
+      font-size: 32px;
     }
   }
   @media (min-width: 1900px) {
-    .nav-bar {
-      ul {
-        li {
-          width: 10px;
-          height: 10px;
-        }
-        .text {
-          p {
-            font-size: 16px;
-          }
-        }
-        .active {
-          bottom: 10%;
-          left: 10%;
-          width: 6px;
-          height: 6px;
-        }
-      }
-    }
-    .content {
-      padding-top: 25vh;
-    }
     h2 {
-      font-size: 46px;
-      margin-bottom: 4vh;
+      font-size: 65px;
+      &::after,
+      &::before {
+        top: 62%;
+      }
+      &::after {
+        left: 40.5%;
+      }
+      &::before {
+        left: 55%;
+      }
     }
     p {
       font-size: 38px;
-      margin-bottom: 9vh;
-    }
-    .menu-concept-list {
-      ul {
-        li {
-          .icon {
-            margin: 1vh auto 0;
-            width: 146px;
-            height: 146px;
-            font-size: 72px;
-            i {
-              bottom: 3vh;
-            }
-          }
-          p {
-            font-size: 22px;
-          }
-        }
-        li:first-of-type::after {
-          top: 29%;
-          left: 36%;
-          font-size: 55px;
-        }
-        li:last-of-type::before {
-          top: 29%;
-          right: 36%;
-          font-size: 55px;
-        }
-        li:not(:last-child) {
-          margin-right: 12%;
-        }
-      }
     }
   }
   @media (min-width: 2500px) {
-    h2 {
-      font-size: 50px;
-    }
-    p {
-      font-size: 42px;
-    }
-    .menu-concept-list {
-      ul {
-        li {
-          .icon {
-            margin: 1vh auto 0;
-            width: 146px;
-            height: 146px;
-            font-size: 72px;
-            i {
-              bottom: 3vh;
-            }
-          }
-          p {
-            font-size: 26px;
-          }
-        }
-        li:first-of-type::after {
-          top: 29%;
-          left: 37%;
-          font-size: 55px;
-        }
-        li:last-of-type::before {
-          top: 29%;
-          right: 37%;
-          font-size: 55px;
-        }
-        li:not(:last-child) {
-          margin-right: 12%;
-        }
-      }
-    }
   }
 }
 .cooking-on-coals {
   position: relative;
   .nav-bar {
-    position: absolute;
-    z-index: 10;
-    top: 60%;
-    left: 97%;
-    transform: translate(-50%, 50%);
-    ul {
-      display: flex;
-      align-items: center;
-      transform: rotate(90deg);
-      width: fit-content;
-      li {
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      left: 2.5%;
+      transform: translate(-50%, 50%);
+      ul {
         display: flex;
-        flex-direction: column-reverse;
-        width: 8px;
-        height: 8px;
-        border: 1px solid;
-        border-radius: 50%;
-        position: relative;
-        cursor: pointer;
-        &:not(:last-child) {
-          margin-right: 15px;
+        align-items: center;
+        transform: rotate(90deg);
+        width: fit-content;
+        li {
+          display: flex;
+          flex-direction: column-reverse;
+          width: 10px;
+          height: 10px;
+          border: 1px solid;
+          border-radius: 50%;
+          position: relative;
+          cursor: pointer;
+          &:not(:last-child) {
+            margin-right: 15px;
+          }
+          a {
+            display: block;
+            width: 20px;
+            height: 20px;
+          }
         }
-        a {
+        .text {
+          width: fit-content;
+          border: none;
+          transform: rotate(180deg);
+          display: inline-block;
+          p {
+            line-height: 8px;
+            font-size: 16px;
+          }
+        }
+        .active {
           display: block;
-          width: 20px;
-          height: 20px;
+          position: absolute;
+          bottom: 15%;
+          left: 16%;
+          width: 6px;
+          height: 6px;
+          border: 1px solid #9cc3ef;
+          border-radius: 50%;
+          background: #9cc3ef;
         }
-      }
-      .text {
-        min-width: 100px;
-        border: none;
-        transform: rotate(180deg);
-        display: inline-block;
-        p {
-          line-height: 4px;
-          font-size: 10px;
-        }
-      }
-      .active {
-        display: block;
-        position: absolute;
-        bottom: 15%;
-        left: 15%;
-        width: 4px;
-        height: 4px;
-        border: 1px solid #ffb100;
-        border-radius: 50%;
-        background: #ffb100;
       }
     }
   }
@@ -754,191 +658,140 @@ main {
     height: 100%;
   }
   .content {
-    padding-top: 7vh;
+    // padding: 124px 21px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 0 21px;
+    top: 50%;
+    left: 50%;
+    width: 100%;
   }
   h2 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 1.21;
     text-transform: uppercase;
-    margin-bottom: 5vh;
+    margin-bottom: 16px;
+    color: #9cc3ef;
   }
   p {
     font-weight: bold;
-    font-size: 20px;
-    &:not(:last-child) {
-      margin-bottom: 14vh;
-    }
+    font-size: 16px;
+    line-height: 1.21;
+    color: #ffffff;
   }
   @media (min-width: 768px) {
     h2 {
-      font-size: 32px;
-      margin-bottom: 20vh;
+      font-size: 36px;
     }
     p {
-      font-size: 22px;
-      &:not(:last-child) {
-        margin-bottom: 16vh;
-      }
+      font-size: 20px;
+      padding: 0 180px;
     }
   }
   @media (min-width: 1024px) {
-    .nav-bar {
-      top: 50%;
-      ul {
-        .text {
-          min-width: 130px;
-          p {
-            line-height: 8px;
-            font-size: 14px;
-          }
-        }
-        .active {
-          bottom: 10%;
-          left: 17%;
-          width: 4px;
-          height: 4px;
-        }
-      }
-    }
     .background {
-      background: url(../img/cooking-on-coals-bg.png) 75% no-repeat;
-      height: 100vh;
+      background: #3dbcbb;
+      min-height: 100vh;
       background-size: cover;
     }
-    .content {
-      padding-top: 17vh;
-    }
     h2 {
-      font-size: 36px;
-      margin-bottom: 10vh;
+      font-size: 44px;
+      margin-bottom: 25px;
     }
     p {
       font-size: 26px;
-      &:not(:last-child) {
-        margin-bottom: 10vh;
-      }
+      padding: 0;
+    }
+    .cooking-on-coals__text {
+      width: 600px;
+      margin: 0 auto;
     }
   }
   @media (min-width: 1280px) {
-    .background {
-      background: url(../img/cooking-on-coals-bg.png) no-repeat;
-      height: 100vh;
-      background-size: cover;
-    }
-    h2 {
-      font-size: 40px;
-      margin-bottom: 10vh;
-    }
-    p {
-      font-size: 30px;
-      &:not(:last-child) {
-        margin-bottom: 10vh;
-      }
-    }
   }
   @media (min-width: 1400px) {
+    h2 {
+      font-size: 56px;
+    }
+    p {
+      font-size: 32px;
+    }
+    .cooking-on-coals__text {
+      width: 700px;
+    }
   }
   @media (min-width: 1900px) {
-    .nav-bar {
-      left: 97.5%;
-      ul {
-        li {
-          width: 10px;
-          height: 10px;
-        }
-        .text {
-          min-width: 150px;
-          p {
-            font-size: 16px;
-          }
-        }
-        .active {
-          bottom: 10%;
-          left: 10%;
-          width: 6px;
-          height: 6px;
-        }
-      }
-    }
-    .content {
-      padding-top: 25vh;
-    }
     h2 {
-      font-size: 46px;
-      margin-bottom: 4vh;
+      font-size: 65px;
     }
     p {
       font-size: 38px;
-      &:not(:last-child) {
-        margin-bottom: 4vh;
-      }
     }
   }
   @media (min-width: 2500px) {
-    h2 {
-      font-size: 50px;
-    }
-    p {
-      font-size: 42px;
-    }
   }
 }
 .we-bake-pizza {
   position: relative;
   .nav-bar {
-    position: absolute;
-    z-index: 10;
-    top: 60%;
-    left: 2.5%;
-    transform: translate(-50%, 50%);
-    ul {
-      display: flex;
-      align-items: center;
-      transform: rotate(90deg);
-      width: fit-content;
-      li {
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      left: 2.5%;
+      transform: translate(-50%, 50%);
+      ul {
         display: flex;
-        flex-direction: column-reverse;
-        width: 8px;
-        height: 8px;
-        border: 1px solid;
-        border-radius: 50%;
-        position: relative;
-        cursor: pointer;
-        &:not(:last-child) {
-          margin-right: 15px;
-        }
-        a {
-          display: block;
-          width: 20px;
-          height: 20px;
-        }
-      }
-      .text {
+        align-items: center;
+        transform: rotate(90deg);
         width: fit-content;
-        border: none;
-        transform: rotate(180deg);
-        display: inline-block;
-        p {
-          line-height: 5px;
-          font-size: 10px;
+        li {
+          display: flex;
+          flex-direction: column-reverse;
+          width: 10px;
+          height: 10px;
+          border: 1px solid;
+          border-radius: 50%;
+          position: relative;
+          cursor: pointer;
+          &:not(:last-child) {
+            margin-right: 15px;
+          }
+          a {
+            display: block;
+            width: 20px;
+            height: 20px;
+          }
         }
-      }
-      .active {
-        display: block;
-        position: absolute;
-        bottom: 15%;
-        left: 15%;
-        width: 4px;
-        height: 4px;
-        border: 1px solid #ffb100;
-        border-radius: 50%;
-        background: #ffb100;
+        .text {
+          width: fit-content;
+          border: none;
+          transform: rotate(180deg);
+          display: inline-block;
+          p {
+            line-height: 8px;
+            font-size: 16px;
+          }
+        }
+        .active {
+          display: block;
+          position: absolute;
+          bottom: 15%;
+          left: 13%;
+          width: 6px;
+          height: 6px;
+          border: 1px solid #3dbcbb;
+          border-radius: 50%;
+          background: #3dbcbb;
+        }
       }
     }
   }
   .background {
-    background: url(../img/we-bake-pizza-bg.png) 80% no-repeat;
+    background: url(../img/we-bake-pizza-bg.png) 100% no-repeat;
     height: 100vh;
     background-size: cover;
   }
@@ -947,118 +800,82 @@ main {
     height: 100%;
   }
   .content {
-    padding-top: 7vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 0 21px;
+    top: 50%;
+    left: 50%;
+    width: 100%;
   }
   h2 {
+    font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 1.21;
     text-transform: uppercase;
-    margin-bottom: 10vh;
-    line-height: 1.55;
-    span {
-      text-decoration: underline;
-    }
+    margin-bottom: 16px;
+    color: #3dbcbb;
+    padding: 0 30px;
   }
-  p {
-    font-weight: bold;
-    font-size: 20px;
+  .we-bake-pizza__text {
+    p {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.21;
+      padding: 0 31px;
+      &:last-of-type {
+        padding: 0 49px;
+      }
+      span {
+        text-decoration: underline;
+        color: #fff;
+      }
+    }
   }
   @media (min-width: 768px) {
-    .content {
-      padding-top: 15vh;
-    }
     h2 {
-      padding: 0 50px;
-      font-size: 32px;
-      margin-bottom: 14vh;
+      font-size: 36px;
+      padding: 0 100px;
     }
-    p {
-      font-size: 22px;
+    .we-bake-pizza__text {
+      p {
+        font-size: 20px;
+        padding: 0 210px;
+        &:last-of-type {
+          padding: 0 230px;
+        }
+      }
     }
   }
   @media (min-width: 1024px) {
-    .nav-bar {
-      top: 50%;
-      ul {
-        .text {
-          p {
-            line-height: 8px;
-            font-size: 14px;
-          }
-        }
-        .active {
-          bottom: 10%;
-          left: 17%;
-          width: 4px;
-          height: 4px;
+    h2 {
+      font-size: 44px;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    .we-bake-pizza__text {
+      p {
+        font-size: 26px;
+        padding: 0;
+        &:last-of-type {
+          padding: 0;
         }
       }
-    }
-    .content {
-      padding-top: 17vh;
-    }
-    h2 {
-      font-size: 36px;
-    }
-    p {
-      font-size: 26px;
     }
   }
   @media (min-width: 1280px) {
-    .background {
-      background: url(../img/we-bake-pizza-bg.png) no-repeat;
-      height: 100vh;
-      background-size: cover;
-    }
-    h2 {
-      font-size: 40px;
-    }
-    p {
-      font-size: 30px;
-    }
   }
   @media (min-width: 1400px) {
-    .nav-bar {
-      ul {
-        .text {
-          p {
-            font-size: 14px;
-          }
-        }
-      }
-    }
     h2 {
-      margin-bottom: 5vh;
+      font-size: 56px;
+    }
+    p {
+      font-size: 32px;
     }
   }
   @media (min-width: 1900px) {
-    .nav-bar {
-      ul {
-        li {
-          width: 10px;
-          height: 10px;
-        }
-        .text {
-          p {
-            font-size: 16px;
-          }
-        }
-        .active {
-          bottom: 10%;
-          left: 10%;
-          width: 6px;
-          height: 6px;
-        }
-      }
-    }
-    .content {
-      padding-top: 27vh;
-      width: 70%;
-      margin: 0 auto;
-    }
     h2 {
-      font-size: 46px;
-      margin-bottom: 4vh;
+      font-size: 65px;
     }
     p {
       font-size: 38px;

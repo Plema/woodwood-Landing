@@ -29,63 +29,6 @@ main {
     height: 103px;
   }
 }
-// .nav-bar {
-//   display: none;
-//   @media (min-width: 1024px) {
-//     display: block;
-//     position: absolute;
-//     z-index: 10;
-//     top: 50%;
-//     left: 2.5%;
-//     transform: translate(-50%, 50%);
-//     ul {
-//       display: flex;
-//       align-items: center;
-//       transform: rotate(90deg);
-//       width: fit-content;
-//       li {
-//         display: flex;
-//         flex-direction: column-reverse;
-//         width: 10px;
-//         height: 10px;
-//         border: 1px solid;
-//         border-radius: 50%;
-//         position: relative;
-//         cursor: pointer;
-//         &:not(:last-child) {
-//           margin-right: 15px;
-//         }
-//         a {
-//           display: block;
-//           width: 20px;
-//           height: 20px;
-//         }
-//       }
-//       .text {
-//         width: fit-content;
-//         border: none;
-//         transform: rotate(180deg);
-//         display: inline-block;
-//         p {
-//           line-height: 8px;
-//           font-size: 16px;
-//         }
-//       }
-//       .active {
-//         display: block;
-//         position: absolute;
-//         transform: translate(-50%, 50%);
-//         left: 50%;
-//         top: -30%;
-//         width: 6px;
-//         height: 6px;
-//         border: 1px solid #ffb100;
-//         border-radius: 50%;
-//         background: #ffb100;
-//       }
-//     }
-//   }
-// }
 .food-and-service {
   position: relative;
   .nav-bar {
@@ -116,8 +59,8 @@ main {
           }
           a {
             display: block;
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
           }
         }
         .text {
@@ -321,8 +264,8 @@ main {
           }
           a {
             display: block;
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
           }
         }
         .text {
@@ -620,8 +563,8 @@ main {
           }
           a {
             display: block;
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
           }
         }
         .text {
@@ -762,8 +705,8 @@ main {
           }
           a {
             display: block;
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
           }
         }
         .text {

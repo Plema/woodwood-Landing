@@ -9,6 +9,7 @@
       cursor: pointer;
       width: 40.64px;
       height: 40.64px;
+      transition: all 0.3s ease-in-out;
       i {
         font-size: 40px;
         color: rgba(255, 255, 255, 0.7);
@@ -207,7 +208,7 @@
         bottom: -75%;
       }
       .down-arrow {
-        bottom: -115%;
+        bottom: -105%;
       }
     }
     @media (min-width: 2500px) {
@@ -274,8 +275,8 @@
           }
           a {
             display: block;
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
           }
         }
         .text {

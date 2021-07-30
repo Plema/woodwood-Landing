@@ -3,10 +3,12 @@
   &-item {
     transition: all 0.5s ease 0s;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .slick-list {
     overflow: hidden;
     height: 100vh !important;
+    height: calc(var(--vh, 1vh) * 100) !important;
   }
   .slick-track {
     display: flex;
@@ -41,6 +43,11 @@
       border-radius: 50%;
       background-color: transparent;
       border: 1.5px solid #fff;
+    }
+  }
+  @media (min-height: 700px) {
+    .slick-dots {
+      bottom: 60px;
     }
   }
   @media (min-width: 1024px) {

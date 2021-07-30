@@ -95,28 +95,29 @@
     p {
       font-family: 'Cartograph Sans CF - DemiBold';
       font-size: 18px;
+      position: relative;
       &:first-of-type {
         margin-bottom: 7px;
       }
     }
-    form {
+    a {
       position: absolute;
-      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translate(-50%, 0%);
       left: 50%;
-      bottom: -104%;
-      button {
-        min-width: 278px;
-        min-height: 56px;
-        background-color: rgba(196, 196, 196, 0.15);
-        border: 1px solid #fff;
-        outline: none;
-        padding: 10px;
-        font-style: 500;
-        font-size: 18px;
-        &:hover {
-          border: 1px solid #ffb100;
-          background: rgba(196, 196, 196, 0.22);
-        }
+      bottom: -110%;
+      min-width: 278px;
+      min-height: 56px;
+      background-color: rgba(196, 196, 196, 0.15);
+      border: 1px solid #fff;
+      outline: none;
+      padding: 0 10px 5px;
+      font-size: 18px;
+      &:hover {
+        border: 1px solid #ffb100;
+        background: rgba(196, 196, 196, 0.22);
       }
     }
 
@@ -125,6 +126,11 @@
     }
     @media (min-height: 560px) {
       top: 40%;
+    }
+    @media (min-height: 700px) {
+      a {
+        bottom: -140%;
+      }
     }
     @media (min-width: 768px) {
       top: 45%;
@@ -141,6 +147,7 @@
         font-size: 46px;
         &::after {
           width: 169px;
+          height: 3px;
           bottom: -70%;
         }
       }

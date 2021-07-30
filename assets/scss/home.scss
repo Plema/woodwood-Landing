@@ -90,11 +90,15 @@ main {
   }
   .background {
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/work-team-bg-mob.png) 60% 0 no-repeat;
-    // height: 100vh;
+    height: 100vh;
     background-size: cover;
   }
   .container {
-    padding: 89px 27px;
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
   }
   h2 {
     position: relative;
@@ -181,14 +185,14 @@ main {
       }
     }
     .icon {
-      margin: 19vh auto 0;
+      margin: 103px auto 0;
       width: 146px;
       height: 146px;
       font-size: 58px;
       &:after {
         content: '';
         position: absolute;
-        top: -45%;
+        top: -40%;
         left: 50%;
         width: 169px;
         height: 3px;
@@ -223,12 +227,6 @@ main {
     }
     p {
       font-size: 38px;
-    }
-    .icon {
-      margin: 28vh auto 0;
-      &:after {
-        top: -80%;
-      }
     }
   }
   @media (min-width: 2500px) {
@@ -812,16 +810,20 @@ main {
     h2 {
       font-size: 56px;
     }
-    p {
-      font-size: 32px;
+    .we-bake-pizza__text {
+      p {
+        font-size: 32px;
+      }
     }
   }
   @media (min-width: 1900px) {
     h2 {
       font-size: 65px;
     }
-    p {
-      font-size: 38px;
+    .we-bake-pizza__text {
+      p {
+        font-size: 38px;
+      }
     }
   }
   @media (min-width: 2500px) {

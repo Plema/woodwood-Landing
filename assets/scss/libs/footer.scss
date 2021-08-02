@@ -28,6 +28,8 @@ footer {
       p {
         font-size: 16px;
         line-height: 1.21;
+        width: 250px;
+        margin: 0 auto;
       }
     }
     .footer-content-second {
@@ -103,6 +105,10 @@ footer {
       .footer-content-first {
         width: 45%;
         margin: 0 5px 30px;
+        p {
+          width: 250px;
+          margin: 0 auto;
+        }
       }
       .footer-content-second {
         width: 45%;
@@ -135,6 +141,9 @@ footer {
       .footer-content-first {
         width: 40%;
         margin: 0;
+        p {
+          margin: 0;
+        }
       }
       .footer-content-second {
         width: 22%;
@@ -172,7 +181,7 @@ footer {
       text-align: left;
       padding: 0;
       .footer-content-first {
-        width: 484px;
+        width: 420px;
         margin: 0;
       }
       .footer-content-second {
@@ -200,7 +209,7 @@ footer {
     }
     .footer-content {
       .footer-content-first {
-        width: 435px;
+        width: 320px;
         margin: 0;
       }
       .footer-content-second {

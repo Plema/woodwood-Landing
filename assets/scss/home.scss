@@ -89,7 +89,7 @@ main {
     }
   }
   .background {
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/work-team-bg-mob.png) 50% 0 no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slice_1.png) 82% 0% no-repeat;
     height: 100vh;
     background-size: cover;
   }
@@ -149,9 +149,12 @@ main {
 
   @media (min-width: 768px) {
     .background {
-      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/work-team-bg2.png) 50% 0 no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slice_1.png) 0 10% no-repeat;
       height: 100vh;
       background-size: cover;
+    }
+    .container {
+      top: 45%;
     }
     h2 {
       font-size: 36px;
@@ -166,7 +169,7 @@ main {
   }
   @media (min-width: 1024px) {
     .background {
-      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/work-team-bg2.png) 50% 0 no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/slice_2.png) 0 5% no-repeat;
       height: 100vh;
       background-size: cover;
     }
